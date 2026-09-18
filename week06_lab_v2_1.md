@@ -492,13 +492,12 @@ GET https://fakestoreapi.com/products
 ไม่ว่าจะเลือกแบบไหน เป้าหมายคือต้องเห็น **ผลลัพธ์จริงจาก Fake Store API** ปรากฏขึ้นมา  ถ้ารันแล้วเจอ error หรือโค้ดจาก Gemini ผิดพลาด (เช่น import ขาด, ชื่อ field ไม่ตรงกับ JSON จริง) ให้จดบันทึกข้อความ error และวิธีแก้ไขไว้ในด้านล่าง
 
 ```text
-บันทึก error และการแก้ไขที่นี่
+บันทึก error และการแก้ไข : สาเหตุที่ไม่มี Error เนื่องจาก AI ได้ import package ที่จำเป็นมาครบถ้วน เช่น dart:io และมีการแปลงชนิดข้อมูลของ price ผ่าน num ก่อนแปลงเป็น double ทำให้ไม่เกิดปัญหา Type mismatch
 ```
 
 > ✅ **Checkpoint 4.2** ถ่ายภาพหน้าจอ Debug Console ที่แสดงผลลัพธ์จริงจากการเรียก `fetchAiProducts()` (เช่น รายการสินค้าที่ print ออกมา) 
-```text
-บันทึกรูปที่นี่
-```
+
+<img width="1600" height="408" alt="Picture (5)" src="https://github.com/user-attachments/assets/332fec57-e9ad-4873-ba9d-925f5682a61c" />
 
 ---
 
