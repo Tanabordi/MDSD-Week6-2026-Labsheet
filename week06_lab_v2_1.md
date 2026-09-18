@@ -584,11 +584,22 @@ Future<Weather> fetchWeatherWithDio(String city) async {
 2. การใส่พารามิเตอร์: dio ใช้ queryParameters เป็น Map ได้เลย โค้ดสะอาดกว่า http ที่ต้องต่อ String URL เอง
 3. การจัดการ Error: dio รวบ Error ทุกแบบไว้ใน DioException แล้วแยกด้วย e.type ได้เลย แต่ http ต้องเขียนดักทีละคลาสแยกกัน
 ```
->
+
 > ✅ **Checkpoint 5.3** แสดงโค้ดเงื่อนไข `DioExceptionType` เพิ่มเติมที่เขียนเองในขั้นตอนที่ 5.4 
 
 ```text
-บันทึกคำตอบที่นี่
+} on DioException catch (e) {
+  if (e.type == DioExceptionType.connectionTimeout) {
+    throw Exception('หมดเวลาเชื่อมต่อ');
+  } else if (e.type == DioExceptionType.badResponse) {
+    throw Exception('เซิร์ฟเวอร์ตอบกลับผิดพลาด (${e.response?.statusCode})');
+  } else if (e.type == DioExceptionType.receiveTimeout) {
+    throw Exception('รับข้อมูลช้าเกินไป');
+  } else if (e.type == DioExceptionType.connectionError) {
+    throw Exception('ไม่ได้ต่ออินเทอร์เน็ต');
+  }
+  throw Exception('เกิดข้อผิดพลาด: ${e.message}');
+}
 ```
 ---
 
