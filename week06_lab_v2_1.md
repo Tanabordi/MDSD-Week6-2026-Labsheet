@@ -721,9 +721,8 @@ void main() {
 
 > ✅ **Checkpoint 7.1** ถ่ายภาพ Debug Console ที่ทดสอบ `Item.fromJson()` กับ JSON ตัวอย่างข้างต้นแล้ว print ค่าทั้ง 6 ฟิลด์ออกมาได้ถูกต้อง
 
-```text
-บันทึกรูปที่นี่
-```
+<img width="1558" height="457" alt="Picture (10)" src="https://github.com/user-attachments/assets/5c270277-efdf-4816-b8bd-74a80ded1353" />
+
 ### ขั้นตอนที่ 7.3 — 🔧 ทำตาม (Interface) + 🧠 คิดเอง (Implementation)
 
 ในสัปดาห์ก่อนหน้า มีการเรียนหลักการ **Repository Pattern** ไปแล้วว่า Widget/ViewModel ไม่ควรรู้จักแหล่งข้อมูลโดยตรง (เช่น เรียก `http.get()` เองในไฟล์ UI) แต่ควรรู้จักผ่าน **Interface** เท่านั้น เพื่อให้สลับแหล่งข้อมูลได้โดยไม่ต้องแก้ Widget สัปดาห์นี้ Campus Marketplace มีแหล่งข้อมูลจริงให้ดึง (REST API) ซึ่งจะนำทฤษฎีเรื่อง Repository Pattern มาใช้งานจริง
@@ -858,13 +857,25 @@ class _HomePageState extends State<HomePage> {
 
 > ✅ **Checkpoint 7.3** รันแอปแล้วถ่ายภาพหน้าจอ Home ที่แสดงรายการสินค้าจริงจาก Fake Store API ผ่าน `ItemRepositoryApi` (ไม่ใช่ข้อมูล mock up) พร้อมภาพโครงสร้างไฟล์ที่แสดงให้เห็นว่ามีทั้ง `item_repository.dart` (Interface) และ `item_repository_api.dart` (Impl) แยกกันชัดเจน และทดสอบว่าปุ่ม "เพิ่มลงตะกร้า" กับการกดไปหน้า `CheckoutPage` จากสัปดาห์ที่ 5 ยังทำงานได้ปกติกับข้อมูล `Item` ชุดใหม่นี้ 
 
-```text
-บันทึกรูปที่นี่
-```
+**ภาพหน้ารวมสินค้าทั้งหมด**
+
+<img width="1600" height="850" alt="13" src="https://github.com/user-attachments/assets/e99fbd50-b853-4b64-a401-f793c1742181" />
+
+---
+**ภาพหน้ารายการสินค้าที่บันทึกเป็นรายการโปรด**
+
+<img width="1600" height="850" alt="14" src="https://github.com/user-attachments/assets/a2260e2a-bf99-40cb-8898-f539630c1630" />
+
+---
+**ภาพหน้ารายการโปรดของฉัน**
+
+<img width="1600" height="850" alt="15" src="https://github.com/user-attachments/assets/ee5b2771-b64a-40d7-a64c-b539ef26d00b" />
+
+---
+**ภาพหน้ารายการสินค้าที่ลบบันทึกเป็นรายการโปรด 1 อัน**
+
+<img width="1600" height="850" alt="16" src="https://github.com/user-attachments/assets/badef80e-e143-4ffc-8aaf-991e32ca096a" />
 
 ---
 
-
-
 อย่าลืมให้เข้าไปทำ **[Quiz Chapter 6]** บน Moodle และควรอ่านทำความเข้าใจทฤษฎีก่อน ไม่ใช่แค่เข้าไปกดทำแบบทดสอบ เพื่อรอดูเฉลยเพียงอย่างเดียว
-
