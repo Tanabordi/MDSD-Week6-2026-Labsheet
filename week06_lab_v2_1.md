@@ -186,9 +186,8 @@ void main() {
 
 > ✅ **Checkpoint 2.1** รันไฟล์ทดสอบข้างต้น สังเกตค่าทั้ง 4 ฟิลด์ที่ `print()` ออกมาใน Debug Console ว่าตรงกับ Response Body จริงจาก Postman หรือไม่ ถ่ายภาพหน้าจอ Debug Console ที่แสดงว่าค่าทั้ง 4 ฟิลด์ถูกต้องตรงกับ JSON จริง
 
-<img width="760" height="482" alt="image" src="https://github.com/user-attachments/assets/8b9c884f-9895-4785-8785-a95a47f2c103" />
+<img width="1600" height="378" alt="Picture (7)" src="https://github.com/user-attachments/assets/0d22db4d-1317-4494-a2e6-2b24a397d8e7" />
 
-*ทำการทดสอบผ่าน Terminal แทน Debug Console เนื่องจาก เครื่องไม่ได้ลง Visual Studio toolchain ไว้ครับ*
 > ผลลัพธ์ที่รันได้ มีค่าตรงกับข้อมูล JSON จาก Postman ถูกต้องครบทั้ง 4 ค่า
 
 ### ขั้นตอนที่ 2.3 — 🧠 คิดเอง/ออกแบบเอง
