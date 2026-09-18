@@ -237,7 +237,7 @@ class WeatherService {
 
 > ✅ **Checkpoint 2.2** บันทึกผลการตรวจสอบ `statusCode` อย่างน้อย 2 กรณี (สำเร็จ และ 404) ตามเกณฑ์ข้างต้น
 
-<img width="702" height="157" alt="image" src="https://github.com/user-attachments/assets/360c1031-114d-4386-893e-87b2d15ec645" />
+<img width="1292" height="442" alt="Picture (9)" src="https://github.com/user-attachments/assets/6b7d3154-1dc6-411a-a430-71d90a1cf507" />
 
 ### ขั้นตอนที่ 2.4 — 🧠 คิดเอง/ออกแบบเอง
 
