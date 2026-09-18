@@ -90,9 +90,9 @@ https://api.openweathermap.org/data/2.5/weather?q=Bangkok&appid=YOUR_API_KEY&uni
 
 > ✅ **Checkpoint 1.2** บันทึกด้านล่างว่านักศึกษาเลือกทดสอบกรณีใด คาดการณ์ Status Code ไว้ว่าอะไร และ Status Code จริงที่ได้คืออะไร (ตรงหรือไม่ตรงกับที่คาดไว้) พร้อมอธิบายว่าผลลัพธ์ที่ได้ตรงกับช่วง Status Code ใดตามตารางในบทเรียนหัวข้อ 6.3
 
-```text
-บันทึกรูปและคำตอบที่นี่
-```
+<img width="1600" height="850" alt="image" src="https://github.com/user-attachments/assets/be13fa55-4593-4b7e-93fc-1c443f404d43" />
+
+> กรณีที่ทดสอบ เพิ่มตัวอักษรใน API Key (appid) ให้ผิด ซึ่ง Status Code ที่คาดการณ์คือ 401 และผลลัพธ์ที่ได้ Status Code คือ 401 ซึ่งตรงกับที่คาดการณ์ไว้ โดยอยู่ในช่วง 4xx Client Error ตามตารางในบทเรียนหัวข้อ 6.3
 ---
 
 ## ส่วนที่ 2: สร้าง Model Class และเรียก API ด้วย http Package
